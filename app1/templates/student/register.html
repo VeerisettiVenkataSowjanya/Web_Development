@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registrationpage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"type="text/css"href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'jquery/jquery.min.js' %}"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<form method="POST">
+				{% csrf_token %}
+				<div class="card-header">Registration page</div>
+				<div class="card-body">
+					<div class="form-group">
+						<label>Firstname</label>
+						<input type="text" name="Firstname" placeholder="Enter Firstname" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Lastname</label>
+						<input type="text" name="Lastname" placeholder="Enter Lastname" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Username</label>
+						<input type="text" name="Username" placeholder="Enter Username" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Rollno</label>
+						<input type="text" name="Rollno" placeholder="Enter Rollno" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" name="email" placeholder="Enter Email Id" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						<input type="password" name="Password" placeholder="Enter Password" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Confirm Password</label>
+						<input type="password" name="CPassword" placeholder="Confirm Password" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Mobileno</label>
+						<input type="number" name="Mobileno" placeholder="Enter Mobileno" class="form-control" required>
+					</div>
+					<!--<input type="submit" name="register" class="form-control bg-info text-light">-->
+				<div class="card-footer bg-info">
+					<button class="btn btn-secondary">Login</button>
+				</div>	
+			</form>
+		</div>
+			
+	</div>
+		
+	</div>
+
+</body>
+</html>

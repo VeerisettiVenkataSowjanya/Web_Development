@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bootstrapex</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+  <link rel="stylesheet"type="text/css"href="{% static 'css/bootstrap.min.css' %}">
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'jquery/jquery.min.js' %}"></script>
+  
+
+</head>
+<body background="{% static 'images/background.jpg' %}">
+	<div class="container col-md-6">
+		<div class="jumbotron bg-danger mt-5 mx-5">
+			<h1 class="text-white text-center">Bootstrap Example</h1>
+		</div>
+	</div>
+	<div class="row">
+		
+	<div class="col-3">
+			<div class="jumbotron bg-danger mt-5 mx-5">
+				<h1 class="text-secondary text-center">block1</h1>
+			</div>
+	</div>
+	<div class="col-3">
+			<div class="jumbotron bg-info mt-5 mx-5">
+				<h1 class="text-secondary text-center">block2</h1>
+			</div>
+	</div>
+	<div class="col-3">
+			<div class="jumbotron bg-danger mt-5 mx-5">
+				<h1 class="text-secondary text-center">block3</h1>
+			</div>
+	</div>
+	<div class="col-3">
+			<div class="jumbotron bg-info mt-5 mx-5">
+				<h1 class="text-secondary text-center">block4</h1>
+			</div>
+	</div>
+
+	</div>
+	<div class="container col-md-4">
+		<div class="table table-dark">
+			<table>
+				<thead class="text-center">
+					<th>Name</th>
+					<th>RollNo</th> 
+					<th>Email</th>
+				</thead>
+				<tbody class="big-secondary text text-center">
+					<tr>
+						<td>Sowjanya</td>
+						<td>5A1</td>
+						<td>sowji@gmail.com</td>
+					</tr>
+					<tr>
+						<td>Aparna</td>
+						<td>587</td>
+						<td>appu@gmail.com</td>
+					</tr>
+                </tbody>
+			</table>
+		</div>
+	</div>
+	<div class="container bg-danger">
+	<div class="row">
+		<div class="col-4">
+			<img src="{% static 'images/image1.jpg' %}" class="rounded-circle">
+		</div>
+		<div class="col-4">
+			<img src="{% static 'images/image2.jpg' %}" style="width:80%; height:100%" class="img-thumbnail">
+		</div>
+		<div class="col-4">
+			<img src="{% static 'images/image3.jpg' %}" class="rounded-circle">
+		</div>
+	</div>
+	</div>
+
+</body>
+</html>

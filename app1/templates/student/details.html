@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"type="text/css"href="{% static 'css/bootstrap.min.css' %}">
+  	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+  	<script type="text/javascript" src="{% static 'jquery/jquery.min.js' %}"></script>
+</head>
+<body>
+		<div class="container col-md-8">
+		<div class="table table-dark">
+			<table>
+				<thead class="text-center">
+					<th>Fname</th>
+					<th>Lname</th>
+					<th>Uname</th>
+					<th>Rollno</th>
+					<th>email</th>
+					<th>pwd</th>
+					<th>cpwd</th>
+					<th>mobile</th>
+				</thead>
+				<tbody class="bg-secondary text-center">
+					<tr>
+						<td>{{Fname}}</td>
+						<td>{{Lname}}</td>
+						<td>{{Uname}}</td>
+						<td>{{Rollno}}</td>
+						<td>{{email}}</td>
+						<td>{{pwd}}</td>
+						<td>{{cpwd}}</td>
+						<td>{{mobile}}</td>
+
+
+					</tr>
+					
+				</tbody>
+				
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>
